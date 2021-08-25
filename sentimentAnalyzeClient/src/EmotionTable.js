@@ -11,13 +11,12 @@ class EmotionTable extends React.Component {
             {
               Object.entries(this.props.emotions).map(function(mapentry) {
                   return (
-                      <tr>
+                      <tr key={Element}>
                           <td>{mapentry[0]}</td>
                           <td>{mapentry[1]}</td>
-                          <td>{mapentry[2]}</td>
-                          <td>{mapentry[3]}</td>
+                          
                       </tr>
-                  )
+                  );
               })
               
             }
